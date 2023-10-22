@@ -5,10 +5,10 @@ mov ah, 0x0e
 mov al, 'a'
 
 loop:
-    ; BIOS interrupt
+    ; BIOS interrupt for video service
     int 0x10
     ; switch to next uppercase letter
-    sub al, 0x1F
+    sub al, 0x1f
     int 0x10
     ; switch to next lowercase letter
     add al, 0x21
