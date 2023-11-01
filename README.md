@@ -17,10 +17,10 @@ sudo apt install nasm qemu-system
 
 The `asm` and `bin` files are located in the directories that correspond to the videos as follows:
 
-| Directory | Video                                                                                                                                                     | Description                                    |
-|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| boot2     | [Chapter 2 - BIOS, Printing the Alphabet, Conditional Jumps](https://www.youtube.com/watch?v=APiHPkPmwwU&list=PLm3B56ql_akNcvH8vvJRYOc7TbYhRs19M&index=2) | Print the alphabet in alternating caps aBcD... |
-| boot3     | [Chapter 3 - Strings, Keyboard Input in BIOS](https://www.youtube.com/watch?v=hseFqtRpK0M&list=PLm3B56ql_akNcvH8vvJRYOc7TbYhRs19M&index=3)                | Store and relay keyboard input                 |
+| Directory | Description                                       | Reference video                                               |
+|-----------|---------------------------------------------------|---------------------------------------------------------------|
+| boot2     | Print the alphabet in alternating caps aBcD...    | Chapter 2 - BIOS, Printing the Alphabet, Conditional Jumps    |
+| boot3     | Store and relay keyboard input                    | Chapter 3 - Strings, Keyboard Input in BIOS                   |
 
 To run the operating system, use the script `boot.sh` with the directory number.
 For example, for `boot2`:
@@ -31,7 +31,7 @@ For example, for `boot2`:
 
 ## References
 
-(As recommended by [Daedalus Community](https://www.youtube.com/@DaedalusCommunity))
+(As recommended by Daedalus Community)
 
 - [NASM cheat sheet](https://www.bencode.net/blob/nasmcheatsheet.pdf)
 - [ASCII table](https://www.asciitable.com/)
