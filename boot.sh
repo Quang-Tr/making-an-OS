@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ "$#" -ne 1 ]] || [[ "$1" -lt 2 ]] || [[ "$1" -gt 3 ]]; then
+if [[ "$#" -ne 1 ]] || [[ "$1" -lt 2 ]] || [[ "$1" -gt 4 ]]; then
     # Redirect stdout to stderr
     echo "Pass one argument of valid directory number" >&2
     exit 1

@@ -21,6 +21,7 @@ The `asm` and `bin` files are located in the directories that correspond to the 
 |-----------|---------------------------------------------------|---------------------------------------------------------------|
 | boot2     | Print the alphabet in alternating caps aBcD...    | Chapter 2 - BIOS, Printing the Alphabet, Conditional Jumps    |
 | boot3     | Store and relay keyboard input                    | Chapter 3 - Strings, Keyboard Input in BIOS                   |
+| boot4     | Convert 16-bit `hex` to `dec`                     | Chapter 4 - Stack, Functions, Segmentation                    |
 
 To run the operating system, use the script `boot.sh` with the directory number.
 For example, for `boot2`:
