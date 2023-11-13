@@ -17,15 +17,18 @@ sudo apt install nasm qemu-system
 
 The `asm` and `bin` files are located in the directories that correspond to the videos as follows:
 
-| Directory | Description                                       | Reference video                                               |
-|-----------|---------------------------------------------------|---------------------------------------------------------------|
-| boot2     | Print the alphabet in alternating caps aBcD...    | Chapter 2 - BIOS, Printing the Alphabet, Conditional Jumps    |
-| boot3     | Store and relay keyboard input                    | Chapter 3 - Strings, Keyboard Input in BIOS                   |
-| boot4     | Convert 16-bit `hex` to `dec`                     | Chapter 4 - Stack, Functions, Segmentation                    |
-| boot5     | Read disk with failure detection                  | Chapter 5 - Reading the disk with BIOS                        |
+| Directory         | Description                                                   | Reference video                                               |
+|-------------------|---------------------------------------------------------------|---------------------------------------------------------------|
+| [boot2](boot2/)   | Print the alphabet in alternating caps aBcD...                | Chapter 2 - BIOS, Printing the Alphabet, Conditional Jumps    |
+| [boot3](boot3/)   | Store and relay keyboard input                                | Chapter 3 - Strings, Keyboard Input in BIOS                   |
+| [boot4](boot4/)   | Convert 16-bit `hex` to `dec`                                 | Chapter 4 - Stack, Functions, Segmentation                    |
+| [boot5](boot5/)   | Read disk with failure detection                              | Chapter 5 - Reading the disk with BIOS                        |
+| [boot6](boot6/)   | Global Descriptor Table and text UI in 32-bit protected mode  | Chapter 6 - Entering Protected mode, GDT                      |
 
-To run the operating system, use the script `boot.sh` with the directory number.
-For example, for `boot2`:
+![The repository structure visualized by boot6.asm, adpated from Midnight Commander](boot6/boot6.png "The repository structure visualized by boot6.asm, adpated from Midnight Commander")
+
+To boot, use the script `boot.sh` with the directory number.
+E.g., for `boot2`:
 
 ```bash
 ./boot.sh 2
@@ -38,3 +41,5 @@ For example, for `boot2`:
 - [NASM cheat sheet](https://www.bencode.net/blob/nasmcheatsheet.pdf)
 - [ASCII table](https://www.asciitable.com/)
 - [BIOS interrupt 13h](https://en.wikipedia.org/wiki/INT_13H)
+- [Text UI](https://wiki.osdev.org/Text_mode)
+- [Reference code @mell-o-tron](https://github.com/mell-o-tron/OS-Reference)
