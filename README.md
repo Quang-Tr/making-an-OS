@@ -1,7 +1,7 @@
 # Making an OS (x86)
 
 This is my code to learn a little bit assembly when I came across the interesting YouTube playlist ["Making an OS (x86)"](https://www.youtube.com/watch?v=MwPjvJ9ulSc&list=PLm3B56ql_akNcvH8vvJRYOc7TbYhRs19M) by [Daedalus Community](https://www.youtube.com/@DaedalusCommunity).
-Its aim is to create a 512-byte-long boot sector in `nasm`, an asssembler for the x86 CPU architecture.
+Its aim is to create a 512-byte-long boot sector in `nasm`, an assembler for the x86 CPU architecture.
 
 ## Requirements
 
@@ -25,7 +25,7 @@ The `asm` and `bin` files are located in the directories that correspond to the 
 | [boot5](boot5/)   | Read disk with failure detection                              | Chapter 5 - Reading the disk with BIOS                        |
 | [boot6](boot6/)   | Global Descriptor Table and text UI in 32-bit protected mode  | Chapter 6 - Entering Protected mode, GDT                      |
 
-![The repository structure visualized by boot6.asm, adpated from Midnight Commander](boot6/boot6.png "The repository structure visualized by boot6.asm, adpated from Midnight Commander")
+![The repository structure visualized by boot6.asm, adapted from Midnight Commander](boot6/boot6.png "The repository structure visualized by boot6.asm, adapted from Midnight Commander")
 
 To boot, use the script `boot.sh` with the directory number.
 E.g., for `boot2`:
